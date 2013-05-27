@@ -19,6 +19,9 @@ public class ResolveDns {
 
 	public static void run(String args[]){
 
+		// Explicitly set the DNS cache timeout
+		//Security.setProperty("networkaddress.cache.ttl" , "60");
+
 		// Run in a 5 second loop to monitor for changes
 		while (true) {
 
